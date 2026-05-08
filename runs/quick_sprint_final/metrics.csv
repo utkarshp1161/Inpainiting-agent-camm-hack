@@ -1,0 +1,4 @@
+iteration,tool,params,psnr,masked_psnr,ssim,reflection
+1,directional_neighbor_fill,"{""horizontal_weight"": 0.5, ""vertical_weight"": 0.5}",16.487125,14.588274,0.754898,First scored reconstruction; use it as the baseline for the next decision.
+2,directional_neighbor_fill,"{""horizontal_weight"": 0.8, ""vertical_weight"": 0.2}",16.487125,14.588274,0.754898,Quality is roughly tied with the best attempt; prefer the simpler/sharper result.
+3,directional_neighbor_fill,"{""horizontal_weight"": 0.2, ""vertical_weight"": 0.8}",16.487125,14.588274,0.754898,Quality is roughly tied with the best attempt; prefer the simpler/sharper result.

@@ -1,0 +1,49 @@
+{
+  "damaged": "data/Image3-missing_large_region.png",
+  "ground_truth": "data/Image3-GT.png",
+  "mask_pixels": 209920,
+  "attempts": [
+    {
+      "iteration": 1,
+      "tool": "directional_neighbor_fill",
+      "params": {
+        "horizontal_weight": 0.5,
+        "vertical_weight": 0.5
+      },
+      "psnr": 9.120109201381714,
+      "masked_psnr": 8.845927727832102,
+      "ssim": 0.49735422807529406,
+      "reflection": "First scored reconstruction; use it as the baseline for the next decision.",
+      "output": "runs/quick_sprint_img3/attempt_01_directional_neighbor_fill.png"
+    },
+    {
+      "iteration": 2,
+      "tool": "directional_neighbor_fill",
+      "params": {
+        "horizontal_weight": 0.8,
+        "vertical_weight": 0.2
+      },
+      "psnr": 9.120109201381714,
+      "masked_psnr": 8.845927727832102,
+      "ssim": 0.49735422807529406,
+      "reflection": "Quality is roughly tied with the best attempt; prefer the simpler/sharper result.",
+      "output": "runs/quick_sprint_img3/attempt_02_directional_neighbor_fill.png"
+    },
+    {
+      "iteration": 3,
+      "tool": "directional_neighbor_fill",
+      "params": {
+        "horizontal_weight": 0.2,
+        "vertical_weight": 0.8
+      },
+      "psnr": 9.120109201381714,
+      "masked_psnr": 8.845927727832102,
+      "ssim": 0.49735422807529406,
+      "reflection": "Quality is roughly tied with the best attempt; prefer the simpler/sharper result.",
+      "output": "runs/quick_sprint_img3/attempt_03_directional_neighbor_fill.png"
+    }
+  ],
+  "best_iteration": 1,
+  "best_masked_psnr": 8.845927727832102,
+  "best_ssim": 0.49735422807529406
+}

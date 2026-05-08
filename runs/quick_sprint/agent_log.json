@@ -1,0 +1,52 @@
+{
+  "damaged": "data/Image0-missing_large_region.png",
+  "ground_truth": "data/Image0-GT.png",
+  "mask_pixels": 999953,
+  "attempts": [
+    {
+      "iteration": 1,
+      "tool": "gaussian_neighbor_fill",
+      "params": {
+        "radius": 2,
+        "sigma": 1.0,
+        "passes": 1
+      },
+      "psnr": 12.724959932345559,
+      "masked_psnr": 12.724758383360843,
+      "ssim": 0.2086096363671436,
+      "reflection": "First scored reconstruction; use it as the baseline for the next decision.",
+      "output": "runs/quick_sprint/attempt_01_gaussian_neighbor_fill.png"
+    },
+    {
+      "iteration": 2,
+      "tool": "gaussian_neighbor_fill",
+      "params": {
+        "radius": 4,
+        "sigma": 2.0,
+        "passes": 2
+      },
+      "psnr": 12.188597732054419,
+      "masked_psnr": 12.188395883996659,
+      "ssim": 0.025562773695555045,
+      "reflection": "Masked PSNR dropped by 0.54 dB; avoid this smoothing level next.",
+      "output": "runs/quick_sprint/attempt_02_gaussian_neighbor_fill.png"
+    },
+    {
+      "iteration": 3,
+      "tool": "gaussian_neighbor_fill",
+      "params": {
+        "radius": 7,
+        "sigma": 3.0,
+        "passes": 4
+      },
+      "psnr": 12.199497421296385,
+      "masked_psnr": 12.199295578955835,
+      "ssim": 0.016429264110955768,
+      "reflection": "Masked PSNR dropped by 0.53 dB; avoid this smoothing level next.",
+      "output": "runs/quick_sprint/attempt_03_gaussian_neighbor_fill.png"
+    }
+  ],
+  "best_iteration": 1,
+  "best_masked_psnr": 12.724758383360843,
+  "best_ssim": 0.2086096363671436
+}
