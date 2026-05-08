@@ -1,4 +1,4 @@
-# Can agents be useful in image inpainitng problems in Electron Microscope images of material systems? 
+# Can AI agents improve image inpainting for electron microscopy of materials systems?
 - Explored in 2.5 hours - camm hackathon
 - Agent code in sprint_agent folder
     - runs folder has agent context at each run and iteration
